@@ -1,7 +1,5 @@
 function logMsg(object) {
-    if (this.errMsg) {
-        console.log(`Error Message: " + ${object.errMsg}`);
-    }
+    console.log(`Error Message: " + ${object.errMsg}`);
 }
 
 const obj1 = {

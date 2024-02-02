@@ -1,10 +1,10 @@
-window.onload = function() {
+window.onload = function () {
   document.getElementById('addTableBtn').addEventListener('click', addTable);
 }
 
 function createTRNode(colNodes) {
   let trNode = document.createElement("tr");
-  colNodes.forEach(function(colNode) {
+  colNodes.forEach(function (colNode) {
     trNode.appendChild(colNode);
   })
   return trNode;
@@ -24,7 +24,7 @@ function createTxtNode(txt) {
 
 function addTable() {
   const tableNode = document.createElement("table");
-  for(let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     let col1 = createTDNode(createTxtNode("Cell (" + i + ", 0)"));
     tableNode.appendChild(createTRNode([col1]));
   }
